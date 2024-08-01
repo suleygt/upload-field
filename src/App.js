@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="form-container">
+      <form className="upload-form">
+        <div className="form-content">
+        <form className="inner-form">
+            <img src="/cloud-fill.png" alt="Cloud" className="cloud-image" />
+            <p className="browse-text">Browse Files to upload</p>
+          </form>
+        </div>
+       
+        <div className="form-images">
+          <img src="/file-image.png" alt="File" className="file-image" />
+          <span className="text">No selected file ―</span>
+          <img src="/delete.png" alt="No Selected File" className="delete-image" />
+        </div>
+      </form>
     </div>
   );
-}
+};
 
 export default App;
